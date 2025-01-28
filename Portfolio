@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+<style>
+    /* Reset default margins and paddings */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and general styles */
+body {
+    font-family:'Times New Roman', Times, serif;
+    background-color: #f4f4f4;
+    color: #410202;
+}
+
+/* Container for sections */
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Header styles */
+header {
+    background-color: #410202;
+    color: #fff;
+    padding: 30px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* About section */
+#about {
+    background-color: #fff;
+    padding: 50px 0;
+}
+
+#about h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-right: 30px;
+    border:5px groove black;
+}
+
+.bio {
+    max-width: 600px;
+}
+#Education{
+    background-color:whitesmoke;
+    padding:50px 0;
+}
+#Education h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+#Education h3{
+    font-size: 25px;
+}
+#Education p{
+    text-align: center;
+}
+
+/* Skills Section */
+#skills {
+    background-color: white;
+    padding: 50px 0;
+}
+
+#skills h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+#skills ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    text-align: center;
+}
+
+#skills li {
+    background-color: #3a0202;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    background-color:whitesmoke;
+    padding: 50px 0;
+}
+
+#projects h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.project h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* Resume Section */
+#resume {
+    background-color: white;
+    padding: 30px 0;
+    text-align: center;
+}
+
+#resume a {
+    text-decoration: none;
+    color: #470202;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 2px solid #333;
+    padding: 2px 20px;
+    border-radius: 5px;
+}
+
+#resume a:hover {
+    background-color: #630505;
+    color: #fff;
+}
+
+/* Contact Section */
+#contact {
+    background-color: whitesmoke;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact p {
+    font-size: 1.2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #3a0303;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        margin-bottom: 20px;
+    }
+
+    #skills ul {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .project {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .project img {
+        width: 100%;
+        height: auto;
+    }
+}
+</style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>SATHYA SREE K</h1>
+            <p>Student of R.M.K Engineering College</p>
+            <p>This is My Portfolio</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <h2>ABOUT ME</h2>
+            <div class="about-content">
+                <img src="image.jpeg" alt="This is my Profile" class="profile-img">
+                <div class="bio">
+                    <p>Hello, I'm Sathya Sree K, a Computer Science Engineering Student of RMK Engineering College . I am passionate on Web Development .</p>
+                </div>
+            </div>
+        </div>
+    </section>
+<section id="Education">
+    <div class="container">
+        <h2>EDUCATION</h2>
+        <h3><strong><b>SCHOOL EDUCATION : </b></strong></h3><br><p>&nbsp;&nbsp;&nbsp;&nbsp;I have completed my higher secondary Education in <b>EVERWIN MATRICULATION HIGHER SECONDARY SCHOOL,KOLATHUR,CHENNAI</b>.</p><br><br><br>
+        <h3><strong><b>CURRENTLY : </b></strong></h3><br><p>&nbsp;&nbsp;&nbsp;&nbsp;I am studying B.E Computer Science and Engineering (CSE) at <b>R.M.K ENGINEERING COLLEGE</b>.</p>
+    </div>
+</section>
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <h2>SKILLS</h2>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <div class="container">
+            <h2>"PROJECTS"</h2>
+            <div class="project">
+                <h3>AUGMENTED REALITY BASED INDOOR NAVIGATION SYSTEM</h3>
+                <p>An augmented reality (AR) based indoor navigation system uses AR technology to help users navigate complex indoor environments, such as airports, shopping malls, museums, or hospitals. The system overlays virtual directional information and guidance onto the real-world view of the user, providing a more intuitive and interactive way to navigate indoors.</p>
+            </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume">
+        <div class="container">
+            <h2>RESUME</h2>&nbsp
+            <p><a href="resume.pdf" target="_blank">Download my resume</a></p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <h2>CONTACT ME:</h2>
+            <p>Email: sathyasreek@12gmail.com</p>
+            <p>Phone: 9876543210</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Sathya Sree K. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
